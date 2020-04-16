@@ -1,12 +1,14 @@
 from PIL import Image
+import os
 
-image = Image.open("img/hot-air-ballooning.jpg")
+INPUT_FOLDER = "input"
+OUTPUT_FOLDER = "output"
+
+def in_path(filename):
+    return os.path.join(INPUT_FOLDER, filename)
+
+image = Image.open(in_path("hot-air-ballooning.jpg"))
 print(image.getpixel((200,200)) )
 
 image.show()
-
-#ROTACIONAR IMAGEM
-def rotate():
-    img = Image.open('img/hot-air-ballooning-small.jpg')
-    img.rotate(45).show()
 

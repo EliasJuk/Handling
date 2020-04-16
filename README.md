@@ -3,7 +3,8 @@
 ## Processamento de Imagens
 
 ### Pacotes e Modulos
-- Pillow
+
+- [Pillow](https://pillow.readthedocs.io/en/stable)
 
 
 ## Preparando ambiente virtual
